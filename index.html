@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>yeswanth portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0_q4EQAE2WvZLnf1yCzHwj6hYYpPS5T-aA&usqp=CAU');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>B.Yeswanth</b></h1>
+    <p>Student</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0_q4EQAE2WvZLnf1yCzHwj6hYYpPS5T-aA&usqp=CAU" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0_q4EQAE2WvZLnf1yCzHwj6hYYpPS5T-aA&usqp=CAU" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Portfolio</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="data:image/jpeg;base64,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" style="width:100%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ35P6YeDIIWfaAUdJoLzmOP9C_e5fws78NQ&usqp=CAU" style="width:100%">
+        
+      </div>
+
+      <div class="w3-half">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68_VMxqxw9xCjp__odVaAsTIXSeh7t4IxsQ&usqp=CAU" style="width:100%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGp_lEHDuLZ5JIknTfZUaN2jv9oVtYU7EmA&usqp=CAU" style="width:100%">
+       
+        
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">programing developement</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:65%">65%</div>
+    </div>
+    <p class="w3-wide">Web developement(front end)</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+    </div>
+   
+
+    
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+   
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Vizag, Andhra pradesh</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 8897061463</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: yeswanthburidi@gmail.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <img src="https://images.unsplash.com/photo-1578297886235-c521966ea880?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGNpdHl8ZW58MHx8MHx8&w=1000&q=80" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+   <a href="https://www.facebook.com/profile.php?id=100078362890183"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/yesh_the_1/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <p class="w3-medium">copyright@ Yeswanth,2022 </p>
+   
+    
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
